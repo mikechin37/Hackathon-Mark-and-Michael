@@ -18,7 +18,6 @@
     
     window.setTimeout(makeSpookyImages, 1000);
     window.setTimeout(darkenPage, 1000);
-    window.setTimeout(playMusic, 1000);
     // // window.setTimeout(addSpookyWords, 1000);
     for (let i = 0; i < 100; i++) {
       window.setTimeout(addSpookyWords, 1000*i);
@@ -103,11 +102,9 @@
   
     function playMusic(){
     // play Halloween theme song
-      let audio = new Audio(chrome.runtime.getURL("src/assets/halloween.mp3"));
-    //   let audio = new Audio("src/assets/halloween.mp3");
-      audio.muted = true;
+    //   let audio = new Audio(chrome.runtime.getURL("src/assets/halloween.mp3"));
+      let audio = new Audio("src/assets/halloween.mp3");
       audio.play();
-      audio.muted = false;
     }
   
     // change images to spooky images
@@ -123,6 +120,7 @@
   
     });
   
-    body.addEventListener('apple-eaten', (e) => {
-  
-    });
+    body.addEventListener('click', (e) => {
+        alert("Clicked!");
+        window.setTimeout(playMusic, 1000);
+    }, true);
