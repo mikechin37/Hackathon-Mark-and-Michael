@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(
+      
+      rgba(0, 0, 0, 0.0) 0%,
+      rgba(255, 0, 0, 1.0) 100%
+    )
+}
