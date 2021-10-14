@@ -10,8 +10,13 @@
       ],
       "css": ["src/styles.css"],
       "js": ["content.js"],
-      "run_at" : "document_idle",
-      "web_accessible_resources": ["src/assets/halloween.mp3"]
+      "run_at" : "document_idle"
     }
+  ],
+  "web_accessible_resources": 
+  [
+      "src/assets/halloween.mp3",
+      "src/assets/bluemangroup.jpeg"
   ]
+
 }

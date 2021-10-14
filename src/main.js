@@ -107,7 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function playMusic(){
   // play Halloween theme song
     // let audio = new Audio("src/assets/halloween.mp3");
-    let audio = new Audio("src/assets/yeah-baby-finally.m4a");
+    let audio = new Audio("src/assets/halloween.mp3");
+    audio.muted = false;
     audio.play();
   }
 
